@@ -1,10 +1,11 @@
 package xlog
 
 import (
-	gLocal "github.com/mooncake9527/orange-core/common/xlog/g_local"
 	"log/slog"
 	"runtime"
 	"strconv"
+
+	gLocal "github.com/mooncake9527/npx/common/xlog/g_local"
 )
 
 func appendArgs(args ...any) []any {

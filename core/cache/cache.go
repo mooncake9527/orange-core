@@ -3,11 +3,12 @@ package cache
 import (
 	"context"
 	"fmt"
-	"github.com/redis/go-redis/v9"
 	"strings"
 	"time"
 
-	"github.com/mooncake9527/orange-core/config"
+	"github.com/redis/go-redis/v9"
+
+	"github.com/mooncake9527/npx/config"
 )
 
 type ICache interface {

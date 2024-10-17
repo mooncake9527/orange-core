@@ -3,7 +3,7 @@ package config
 import (
 	"strings"
 
-	"github.com/mooncake9527/orange-core/common/consts"
+	"github.com/mooncake9527/npx/common/consts"
 	"gorm.io/gorm/logger"
 )
 

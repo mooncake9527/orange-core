@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/mooncake9527/orange-core/common/utils"
+	"github.com/mooncake9527/npx/common/utils"
 )
 
 /*

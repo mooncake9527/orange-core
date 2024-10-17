@@ -1,8 +1,8 @@
 package scheduling
 
 import (
-	"github.com/mooncake9527/orange-core/models"
-	"github.com/mooncake9527/orange-core/scheduling/impl"
+	"github.com/mooncake9527/npx/models"
+	"github.com/mooncake9527/npx/scheduling/impl"
 )
 
 type SchedulingHandler interface {

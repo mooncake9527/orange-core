@@ -3,14 +3,15 @@ package ips
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/mooncake9527/x/xerrors/xerror"
 	"io"
 	"net"
 	"net/http"
 	"strings"
 
+	"github.com/mooncake9527/x/xerrors/xerror"
+
 	"github.com/gin-gonic/gin"
-	"github.com/mooncake9527/orange-core/common/utils/https"
+	"github.com/mooncake9527/npx/common/utils/https"
 )
 
 func GetIP(c *gin.Context) string {

@@ -1,7 +1,7 @@
 package antd
 
 import (
-	resp "github.com/mooncake9527/orange-core/common/response"
+	resp "github.com/mooncake9527/npx/common/response"
 )
 
 const (

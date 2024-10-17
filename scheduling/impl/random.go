@@ -1,9 +1,10 @@
 package impl
 
 import (
-	"github.com/mooncake9527/orange-core/models"
 	"math/rand"
 	"time"
+
+	"github.com/mooncake9527/npx/models"
 )
 
 type RandomHandler struct {

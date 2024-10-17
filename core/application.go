@@ -4,7 +4,6 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/mooncake9527/orange-core/core/ebus"
 	"io"
 	"log"
 	"net/http"
@@ -12,18 +11,21 @@ import (
 	"strings"
 	"time"
 
+	"github.com/mooncake9527/npx/core/ebus"
+
 	"os"
 	"sync"
 
+	"log/slog"
+
 	"github.com/gin-gonic/gin"
-	"github.com/mooncake9527/orange-core/common/utils/ips"
-	"github.com/mooncake9527/orange-core/common/utils/text"
-	"github.com/mooncake9527/orange-core/config"
-	"github.com/mooncake9527/orange-core/core/cache"
-	"github.com/mooncake9527/orange-core/core/locker"
+	"github.com/mooncake9527/npx/common/utils/ips"
+	"github.com/mooncake9527/npx/common/utils/text"
+	"github.com/mooncake9527/npx/config"
+	"github.com/mooncake9527/npx/core/cache"
+	"github.com/mooncake9527/npx/core/locker"
 	"github.com/natefinch/lumberjack"
 	"gorm.io/gorm"
-	"log/slog"
 )
 
 var (

@@ -1,7 +1,7 @@
 package impl
 
 import (
-	"github.com/mooncake9527/orange-core/models"
+	"github.com/mooncake9527/npx/models"
 )
 
 type RoundRobinHandler struct {

@@ -1,8 +1,9 @@
 package response
 
 import (
-	"github.com/mooncake9527/orange-core/common/utils"
 	"net/http"
+
+	"github.com/mooncake9527/npx/common/utils"
 
 	"github.com/gin-gonic/gin"
 )

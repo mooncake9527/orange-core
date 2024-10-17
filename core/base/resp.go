@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mooncake9527/orange-core/common/consts"
-	"github.com/mooncake9527/orange-core/core/i18n"
+	"github.com/mooncake9527/npx/common/consts"
+	"github.com/mooncake9527/npx/core/i18n"
 )
 
 const (

@@ -1,9 +1,10 @@
 package apis
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/mooncake9527/orange-core/common/response"
 	"log/slog"
+
+	"github.com/gin-gonic/gin"
+	"github.com/mooncake9527/npx/common/response"
 )
 
 type Api struct{}

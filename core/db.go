@@ -2,14 +2,15 @@ package core
 
 import (
 	"database/sql"
-	"github.com/mooncake9527/x/xerrors/xerror"
 	"io"
 	"log"
 	"log/slog"
 	"time"
 
-	"github.com/mooncake9527/orange-core/common/consts"
-	"github.com/mooncake9527/orange-core/config"
+	"github.com/mooncake9527/x/xerrors/xerror"
+
+	"github.com/mooncake9527/npx/common/consts"
+	"github.com/mooncake9527/npx/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/postgres"
 	"gorm.io/driver/sqlite"

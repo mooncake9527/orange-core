@@ -3,7 +3,7 @@ package models
 import (
 	"fmt"
 
-	"github.com/mooncake9527/orange-core/config"
+	"github.com/mooncake9527/npx/config"
 	"google.golang.org/grpc"
 )
 

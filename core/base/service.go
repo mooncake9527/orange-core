@@ -1,8 +1,8 @@
 package base
 
 import (
-	"github.com/mooncake9527/orange-core/core"
-	"github.com/mooncake9527/orange-core/core/cache"
+	"github.com/mooncake9527/npx/core"
+	"github.com/mooncake9527/npx/core/cache"
 	"github.com/mooncake9527/x/xerrors/xerror"
 	"gorm.io/gorm"
 )

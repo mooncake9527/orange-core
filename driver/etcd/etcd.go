@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mooncake9527/orange-core/config"
-	"github.com/mooncake9527/orange-core/models"
-	"github.com/mooncake9527/orange-core/scheduling"
+	"github.com/mooncake9527/npx/config"
+	"github.com/mooncake9527/npx/models"
+	"github.com/mooncake9527/npx/scheduling"
 
 	"go.etcd.io/etcd/api/v3/mvccpb"
 	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"

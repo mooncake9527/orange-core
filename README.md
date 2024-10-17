@@ -1,3 +1,3 @@
-# orange-core
+# npx
 
-orange 基础包
+orange的基础包

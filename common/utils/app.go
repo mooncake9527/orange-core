@@ -3,7 +3,7 @@ package utils
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"github.com/mooncake9527/orange-core/common/consts"
+	"github.com/mooncake9527/npx/common/consts"
 )
 
 func GetReqId(c *gin.Context) string {

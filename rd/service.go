@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mooncake9527/orange-core/config"
-	"github.com/mooncake9527/orange-core/driver/consul"
-	"github.com/mooncake9527/orange-core/driver/etcd"
-	"github.com/mooncake9527/orange-core/models"
+	"github.com/mooncake9527/npx/config"
+	"github.com/mooncake9527/npx/driver/consul"
+	"github.com/mooncake9527/npx/driver/etcd"
+	"github.com/mooncake9527/npx/models"
 
 	"github.com/hashicorp/consul/api"
 	clientv3 "go.etcd.io/etcd/client/v3"
