@@ -1,11 +1,13 @@
 package base
 
+import "github.com/mooncake9527/x/xerrors/xerror"
+
 type ReqBase struct {
 	ReqId string `json:"reqId" form:"reqId"` // 请求id 链路跟踪
 }
 
 type ReqId struct {
-	Id int `json:"id" form:"id"` // 主键ID
+	Id uint64 `json:"id" form:"id"` // 主键ID
 }
 
 type ReqStrId struct {
@@ -13,7 +15,14 @@ type ReqStrId struct {
 }
 
 type ReqIds struct {
-	Ids []int `json:"ids" form:"ids[]"` //多id
+	Ids []uint64 `json:"ids" form:"ids[]"` //多id
+}
+
+func (x *ReqIds) Valid() error {
+	if len(x.Ids) == 0 {
+		return xerror.New("ids cannot be empty")
+	}
+	return nil
 }
 
 type ReqPage struct {

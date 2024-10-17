@@ -21,13 +21,17 @@ type RDClient interface {
 }
 
 func NewRDClient(cfg *config.Config) (client RDClient, err error) {
+	if cfg.Driver != "etcd" && cfg.Driver != "consul" {
+		err = fmt.Errorf("unsupported driver: %s", cfg.Driver)
+		return nil, err
+	}
 	if cfg.Driver == "etcd" {
 		c := clientv3.Config{
 			Endpoints:   cfg.Endpoints,
 			DialTimeout: cfg.Timeout,
 		}
 		client, err = etcd.NewClient(&c)
-	} else if cfg.Driver == "consul" {
+	} else {
 		c := api.Config{
 			Address:  cfg.Endpoints[0],
 			Scheme:   cfg.Scheme,
@@ -55,10 +59,10 @@ func NewRDClient(cfg *config.Config) (client RDClient, err error) {
 			rs.FailLimit = 3
 		}
 		if rs.Interval <= 0 {
-			rs.Interval = time.Duration(5 * time.Second)
+			rs.Interval = 5 * time.Second
 		}
 		if rs.Timeout <= 0 {
-			rs.Timeout = time.Duration(10 * time.Second)
+			rs.Timeout = 10 * time.Second
 		}
 		err = client.Register(rs)
 		if err != nil {

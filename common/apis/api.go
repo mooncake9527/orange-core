@@ -33,6 +33,10 @@ func (e Api) ErrorC(c *gin.Context, code int, msg string) {
 	response.Error(c, code, msg)
 }
 
+func (e Api) ParamError(c *gin.Context, err error) {
+	response.Error(c, 400, err.Error())
+}
+
 // OK 通常成功数据处理
 func (e Api) OK(c *gin.Context, data interface{}) {
 	response.OK(c, data, "OK")

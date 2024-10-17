@@ -1,3 +1,3 @@
 # npx
 
-orange的基础包
+npx 基础包
